@@ -14,6 +14,14 @@ public class Cart {
         return items.add(item);
     }
 
+    public boolean clearCart(){
+        if (items!=null){
+            items.clear();
+            return true;
+        }
+        return false;
+    }
+
     @Override
     public String toString() {
         if (items.size() ==0){
